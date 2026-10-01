@@ -88,7 +88,7 @@ export default function ContactModal({ isOpen, onClose, defaultEmail }) {
               />
             </div>
 
-            <div style={{ display: 'flex', gap: '12px', justifyContent: 'flex-end', marginTop: '24px' }}>
+            <div style={{ display: 'flex', gap: '12px', justifyContent: 'flex-end', marginTop: '24px', flexWrap: 'wrap' }}>
               <button type="button" className="btn-secondary" onClick={onClose}>
                 Annuler
               </button>
