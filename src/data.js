@@ -20,7 +20,7 @@ export const profile = {
   instagram: 'https://www.instagram.com/sa3d_ed1l',
   school: 'EMSI Rabat — 5e Année Cycle Ingénieur',
   option: 'Développement Digital & Systèmes d\'Information',
-  summary: 'Élève ingénieur passionné par le développement full-stack, la data visualisation et les systèmes embarqués IoT. Fort de deux expériences significatives en stage (Ministère de l\'Économie et Leoni), je conçois des solutions digitales modernes, performantes et centrées utilisateur.'
+  summary: 'Élève ingénieur passionné par le développement full-stack, la data visualisation et les systèmes embarqués IoT. Fort de deux expériences significatives en stage (Ministère de l\'Économie et Leoni), je conçois des solutions digitales modernes, performantes et centrées utilisateur. Je suis actuellement à la recherche d\'un stage PFE.'
 }
 
 export const projects = [
