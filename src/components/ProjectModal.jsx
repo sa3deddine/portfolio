@@ -52,7 +52,7 @@ export default function ProjectModal({ project, onClose, onOpenContact }) {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(3, 1fr)',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(90px, 1fr))',
               gap: '12px',
               background: 'rgba(255,255,255,0.04)',
               padding: '16px',
