@@ -401,6 +401,15 @@ nav.floating-nav .nav-link.active::after {
   gap: 4px;
 }
 
+.hero-name {
+  font-size: clamp(16px, 2vw, 24px);
+  font-weight: 700;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: -5px;
+}
+
 .hero-title {
   font-family: var(--font-heading);
   font-size: clamp(24px, 5.5vw, 56px);

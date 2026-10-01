@@ -221,6 +221,8 @@ export default function App() {
               <Sparkles size={14} /> {profile.school}
             </div>
 
+            <h2 className="hero-name">LAOUINA Saad Eddine</h2>
+
             <h1 className="hero-title">
               Ingénieur <span className="text-gradient">Full-Stack</span> &amp; Data Viz
             </h1>
