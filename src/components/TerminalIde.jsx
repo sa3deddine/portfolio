@@ -55,7 +55,7 @@ curl -X POST https://api.saad.dev/contact \\
           <div className="dot green" />
         </div>
 
-        <div style={{ display: 'flex', gap: '6px', overflowX: 'auto', flexWrap: 'wrap', maxWidth: '100%' }}>
+        <div style={{ display: 'flex', gap: '8px' }}>
           <button
             onClick={() => setActiveTab('config')}
             style={{
