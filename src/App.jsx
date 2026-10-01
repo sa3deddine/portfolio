@@ -279,9 +279,6 @@ export default function App() {
                   src="/hero.jpg"
                   alt="Portrait alternate Saad Eddine Laouina"
                 />
-                <div className="swap-indicator">
-                  <Sparkles size={13} /> Survolez / Cliquez pour changer la vue
-                </div>
               </div>
 
               {/* Orbiting tech pills */}
