@@ -1428,6 +1428,9 @@ footer.footer-section {
 /* ----------------------------------------------------
    RESPONSIVE DESIGN
 ------------------------------------------------------- */
+/* ----------------------------------------------------
+   RESPONSIVE DESIGN (MOBILE & TABLET OPTIMIZATIONS)
+------------------------------------------------------- */
 @media (max-width: 1100px) {
   .hero-grid {
     grid-template-columns: 1fr 1fr;
@@ -1439,26 +1442,180 @@ footer.footer-section {
 }
 
 @media (max-width: 860px) {
+  nav.floating-nav {
+    top: 10px;
+    padding: 6px 10px;
+    gap: 6px;
+    max-width: 98vw;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  nav.floating-nav::-webkit-scrollbar {
+    display: none;
+  }
+  nav.floating-nav .nav-link {
+    font-size: 12px;
+    padding: 6px 10px;
+    white-space: nowrap;
+  }
+  .status-badge {
+    display: none;
+  }
+  .nav-social-buttons {
+    gap: 3px;
+  }
+  .nav-social-icon {
+    padding: 5px 8px;
+  }
+  .nav-social-icon .social-label {
+    display: none;
+  }
+  
+  .hero-container {
+    padding: 100px 4vw 50px;
+  }
   .hero-grid {
     grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .hero-left {
+    align-items: center;
+    text-align: center;
+  }
+  .badge-tag {
+    align-self: center;
+  }
+  .hero-title {
+    font-size: clamp(28px, 7vw, 42px);
+  }
+  .hero-desc {
+    font-size: 15px;
+  }
+  .hero-btns, .hero-contacts-bar {
+    justify-content: center;
   }
   .hero-right {
     grid-column: span 1;
   }
-  .contact-box {
-    grid-template-columns: 1fr;
+
+  .me-card-wrapper {
+    width: min(280px, 80vw);
+    height: 380px;
   }
+  .orbit-pill.p1 { top: 20px; left: -10px; font-size: 11px; padding: 4px 10px; }
+  .orbit-pill.p2 { top: 150px; right: -10px; font-size: 11px; padding: 4px 10px; }
+  .orbit-pill.p3 { bottom: 30px; left: -5px; font-size: 11px; padding: 4px 10px; }
+
+  section {
+    padding: 70px 4vw;
+  }
+  .section-title {
+    font-size: clamp(26px, 6vw, 36px);
+  }
+  .section-sub {
+    font-size: 15px;
+  }
+
+  .project-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .filter-tabs {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 8px;
+    width: 100%;
+    scrollbar-width: none;
+  }
+  .filter-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
   .about-grid {
     grid-template-columns: 1fr;
+    gap: 35px;
   }
+  .about-text {
+    text-align: center;
+  }
+  .skills-matrix {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    padding-left: 0;
+  }
+  .timeline::before {
+    left: 10px;
+  }
+  .timeline-item {
+    padding-left: 32px;
+  }
+  .timeline-node {
+    left: 1px;
+    width: 18px;
+    height: 18px;
+  }
+  .timeline-card {
+    padding: 20px 16px;
+    border-radius: 18px;
+  }
+  .timeline-role {
+    font-size: 18px;
+  }
+  .certs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-box {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+    border-radius: 24px;
+    text-align: center;
+  }
+  .contact-big-text {
+    font-size: clamp(22px, 5vw, 32px);
+  }
+  .mail-link-box {
+    font-size: 15px;
+    padding: 10px 16px;
+  }
+  .footer-social-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
   nav.floating-nav {
-    padding: 6px 12px;
+    top: 6px;
+    padding: 4px 8px;
   }
   nav.floating-nav .nav-link {
-    font-size: 13px;
-    padding: 6px 10px;
+    font-size: 11px;
+    padding: 5px 8px;
   }
-  .status-badge {
-    display: none;
+  .nav-cta {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .hero-contacts-bar {
+    gap: 6px;
+  }
+  .hero-contact-pill {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+
+  .modal-content {
+    padding: 20px 16px;
+    border-radius: 20px;
+    max-height: 88vh;
+    overflow-y: auto;
   }
 }
