@@ -151,15 +151,17 @@ export default function App() {
         <a href="#top" className={`nav-link ${activeSection === 'top' ? 'active' : ''}`}>
           <Sparkles size={15} color="var(--cyan)" /> Saad
         </a>
-        <a href="#projets" className="nav-link">
-          Projets
-        </a>
-        <a href="#about" className="nav-link">
-          À propos
-        </a>
-        <a href="#parcours" className="nav-link">
-          Parcours
-        </a>
+        <div className="nav-menu-links">
+          <a href="#projets" className="nav-link">
+            Projets
+          </a>
+          <a href="#about" className="nav-link">
+            À propos
+          </a>
+          <a href="#parcours" className="nav-link">
+            Parcours
+          </a>
+        </div>
 
         {/* Social Media Buttons at the top */}
         <div className="nav-social-buttons">

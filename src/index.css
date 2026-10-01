@@ -389,12 +389,21 @@ nav.floating-nav .nav-link.active::after {
   letter-spacing: 0.02em;
 }
 
+.nav-menu-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
 .hero-title {
   font-family: var(--font-heading);
-  font-size: clamp(34px, 3.6vw, 56px);
+  font-size: clamp(24px, 5.5vw, 56px);
   font-weight: 800;
-  line-height: 1.1;
+  line-height: 1.15;
   letter-spacing: -0.03em;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 .text-gradient {
@@ -1449,26 +1458,21 @@ footer.footer-section {
 @media (max-width: 860px) {
   nav.floating-nav {
     top: 10px;
-    padding: 6px 10px;
-    gap: 6px;
-    max-width: 98vw;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
+    padding: 6px 12px;
+    gap: 8px;
+    width: calc(100% - 24px);
+    max-width: 420px;
+    justify-content: space-between;
+    overflow: hidden;
   }
-  nav.floating-nav::-webkit-scrollbar {
+  .nav-menu-links {
     display: none;
-  }
-  nav.floating-nav .nav-link {
-    font-size: 12px;
-    padding: 6px 10px;
-    white-space: nowrap;
   }
   .status-badge {
     display: none;
   }
   .nav-social-buttons {
-    gap: 3px;
+    gap: 4px;
   }
   .nav-social-icon {
     padding: 5px 8px;
